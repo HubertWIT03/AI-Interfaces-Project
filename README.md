@@ -6,7 +6,7 @@ A comprehensive suite of Python applications demonstrating the practical use of 
 
 The repository consists of several independent modules that are eventually merged into a final GUI application.
 
-### 1. Kustosz AI - The Final App (`ćwiczenie6.py` / `ćwiczenie5.py`)
+### 1. Kustosz AI - The Final App (`06_final_museum_app.py` / `05_ai_multitool_gui.py`)
 A comprehensive desktop application built with `tkinter` that serves as an assistant for museum archivists. It integrates all the tools below into a single, user-friendly interface with tabs.
 * **Digitization:** Extracts text from PDFs, DOCX, and historical image scans using EasyOCR.
 * **Translation:** Translates historical documents into English using the Google Translator API.
@@ -14,7 +14,7 @@ A comprehensive desktop application built with `tkinter` that serves as an assis
 * **Audio Guides (TTS):** Generates offline narrator voices for museum exhibits based on text input.
 * **Image Cataloging (ViT):** Batch processes and classifies old museum photographs using Google's Vision Transformer (`google/vit-base-patch16-224`) via Hugging Face.
 
-### 2. Audio Transcription & Filtering (`audio_transkrypcja.py`)
+### 2. Audio Transcription & Filtering (`audio_transcryption.py`)
 An advanced audio processing script that allows users to record audio via microphone or load WAV files.
 * **Noise Filtering:** Applies a low-pass Butterworth filter to remove high-frequency noise.
 * **Model Comparison:** Transcribes audio using two different local models: `openai/whisper-small` and `jonatasgrosman/wav2vec2-large-xlsr-53-polish`.
@@ -26,7 +26,7 @@ A local, offline translation tool using the `facebook/mbart-large-50-many-to-man
 * **Idiom Preservation:** Automatically detects and correctly replaces specific English idioms with their Polish equivalents before translation.
 * **Tag Preservation:** Safely extracts specific formatting tags (e.g., `{tag}`) before feeding the text to the neural network and restores them precisely after translation.
 
-### 4. Document & Image Extractor (`ćwiczenie 4.py`)
+### 4. Document & Image Extractor (`04_document_extractor.py`)
 A command-line tool for batch processing and extracting text from multiple file formats.
 * Parses text from `.pdf` (using `pdfplumber`) and `.docx` (using `python-docx`).
 * Performs Optical Character Recognition (OCR) on images (`.png`, `.jpg`) using `easyocr`.
